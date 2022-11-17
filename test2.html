@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .toggle {
+        display: none;
+    }
+
+    .collapse::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .collapse::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+    .collapseable-content {
+        height: 0;
+        width: 100%;
+        background-color: gery;
+        overflow-y: hidden;
+        padding: 0;
+        /* border: 0.5px solid grey;
+        border-bottom: none; */
+        transition: 0.5s all ease-in-out;
+        
+    }
+   .toggle:checked ~ .collapseable-content {
+    height: auto;
+    padding: 10px;
+    overflow: visible;
+   }
+
+   .collapse {
+    background-color: #ddd;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    transition: 0.8s all ease-out;
+   }
+
+   .collapse:hover {
+    background-color: grey;
+   }
+
+   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   input[type=search] {
+    margin: 30px auto;
+    padding: 10px 0;
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+   }    
+
+   input[type=search]::placeholder {
+    padding: 50px;
+   }
+
+   header i {
+    position: absolute;
+    left: 500px;
+   }
+
+   section {
+    width: 800px;
+    margin: auto;
+   }
+</style>
+</head>
+<body>
+    <header>
+        <input type="search" name="" id="" placeholder="Describe Your Issues">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </header>
+   <section>
+    <div>
+        <input type="checkbox" class="toggle" id="collapse">
+        <label for="collapse" class="collapse"> See More </label>
+        <div class="collapseable-content">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ea dolores excepturi voluptate error consequatur nulla alias! Corporis harum earum sapiente temporibus eligendi dolorem nostrum, nesciunt eum reprehenderit corrupti repellendus sit nobis tempore tenetur quas recusandae! Beatae possimus voluptatibus consectetur soluta enim, eaque vel, tenetur explicabo ducimus deleniti odio quos.</p>
+        </div>
+       </div>
+        <div>
+            <input type="checkbox" class="toggle" id="collapse1">
+        <label for="collapse1" class="collapse"> See More </label>
+        <div class="collapseable-content">
+            <h1> Hello </h1>
+        </div>
+        </div>
+        <div>
+        <input type="checkbox" class="toggle" id="collapse2">
+        <label for="collapse2" class="collapse"> See More </label>
+        <div class="collapseable-content">
+            <h1> Hello </h1>
+        </div>
+        </div>
+   </section>
+</body>
+</html>
