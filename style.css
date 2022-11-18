@@ -667,7 +667,7 @@ input[type=search]:focus {
 
 .aboutus-video {
     position: absolute;
-    top: 90vh;
+    top: 110vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -698,8 +698,8 @@ input[type=search]:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     width: 100%;
+    padding: 20px 0px;
 }
 .contactus {
     margin-top: 50px;
@@ -776,7 +776,6 @@ input[type=search]:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
 }
 
 .driver-container {
@@ -895,7 +894,7 @@ footer {
 }
 
 #aboutus-footer {
-    margin-top: 120vh;
+    margin-top: 130vh;
 }
 
 @media (max-width: 1000px) {
@@ -1030,7 +1029,7 @@ footer {
     
     .aboutus-video {
         position: absolute;
-        top: 75vh;
+        top: 115vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1129,9 +1128,7 @@ footer {
         left: 50px;
     }
 
-    .slide-img:nth-child(4)::before {
 
-    }
     .slide-text h2, .slide-text1 h2, .slide-text2 h2, .slide-text3 h2 {
         font-size: 20px;
     }
@@ -1193,7 +1190,7 @@ footer {
     
     .aboutus-video {
         position: absolute;
-        top: 65vh;
+        top: 105vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1210,6 +1207,7 @@ footer {
     }
     .video {
         grid-template-columns: 1fr;
+        margin-top: 150px;
     }
     .driver-container {
         flex-wrap: wrap;
@@ -1241,6 +1239,7 @@ footer {
         margin-top: 100vh;
     }
     #driver-footer {
-        margin-top: 75vh;
+        margin-top: 40px;
     }
+
 }
