@@ -130,7 +130,7 @@ nav ul li a:hover {
     margin: 30px 0px;
     width: 100%;
     height: 600px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .slide-store {
@@ -224,7 +224,7 @@ nav ul li a:hover {
     left: 200px;
 }
 
-@keyframes slide {
+/* @keyframes slide {
         0% {
             left: 50%;
         }
@@ -243,7 +243,7 @@ nav ul li a:hover {
         100% {
             left: -300%;
         }
-}
+} */
 
 /* Slide Text  */
 
@@ -1177,7 +1177,14 @@ footer {
 
     .slide-text3 {
        left: 150px;
-       top: -250px;
+       top: -180px;
+    }
+
+    .slide-text3 button {
+        margin-left: 20%;
+    }
+    .slide-text2 button {
+        margin-left: 45%;
     }
 
     .aboutus {
@@ -1190,7 +1197,7 @@ footer {
     
     .aboutus-video {
         position: absolute;
-        top: 105vh;
+        top: 130vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1236,7 +1243,7 @@ footer {
        background: none ;
     }
     #aboutus-footer {
-        margin-top: 100vh;
+        margin-top: 130vh;
     }
     #driver-footer {
         margin-top: 40px;
