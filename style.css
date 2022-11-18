@@ -130,7 +130,7 @@ nav ul li a:hover {
     margin: 30px 0px;
     width: 100%;
     height: 600px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .slide-store {
@@ -224,7 +224,7 @@ nav ul li a:hover {
     left: 200px;
 }
 
-/* @keyframes slide {
+@keyframes slide {
         0% {
             left: 50%;
         }
@@ -243,7 +243,7 @@ nav ul li a:hover {
         100% {
             left: -300%;
         }
-} */
+}
 
 /* Slide Text  */
 
